@@ -9,11 +9,11 @@ Given a three-digit integer a,  check the following statement "All digits sum is
 */
 
 void main() {
-  print(func(221));
+  print(func(222));
 }
 
 bool func(int a) {
-  if ((a ~/ 100 + a ~/ 10 + a % 10 != 0)) {
+  if ((a ~/ 100 + a ~/ 10 - a ~/ 100 * 10 + a % 10)%2 != 0) {
     return true;
   }
   return false;

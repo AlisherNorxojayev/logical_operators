@@ -8,4 +8,13 @@ Given a two-digit integer a,  check the following statement "All digits sum is o
         bool: answer
 */
 
-void main() {}
+void main() {
+  print(func(22));
+}
+
+bool func(int a) {
+  if ((a ~/ 10 + a % 10) % 2 != 0) {
+    return true;
+  }
+  return false;
+}

@@ -8,4 +8,13 @@ Given integer a,  check the following statement "The integer is a five-digit num
         bool: answer
 */
 
-void main() {}
+void main() {
+  print(func(11111));
+}
+
+bool func(int a) {
+  if (a >= 10000 && a <= 99999) {
+    return true;
+  }
+  return false;
+}

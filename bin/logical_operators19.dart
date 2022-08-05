@@ -9,4 +9,13 @@ Given a three digit integer x, return true if x is palindrome integer.
       bool: answer
 */
 
-void main() {}
+void main() {
+  print(func(223));
+}
+
+bool func(int x) {
+  if (x ~/ 100 == x % 10) {
+    return true;
+  }
+  return false;
+}

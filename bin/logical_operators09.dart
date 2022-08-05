@@ -9,4 +9,13 @@ Given two integers a, b,  check the following statement "At least one of the num
         bool: answer
 */
 
-void main() {}
+void main() {
+  print(func(12, 5));
+}
+
+bool func(int a, int b) {
+  if (a % 2 != 0 || b % 2 != 0) {
+    return true;
+  }
+  return false;
+}

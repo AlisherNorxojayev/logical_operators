@@ -8,4 +8,13 @@ Given a three-digit integer a,  check the following statement "All digits sum is
         bool: answer
 */
 
-void main() {}
+void main() {
+  print(func(221));
+}
+
+bool func(int a) {
+  if ((a ~/ 100 + a ~/ 10 + a % 10 != 0)) {
+    return true;
+  }
+  return false;
+}
